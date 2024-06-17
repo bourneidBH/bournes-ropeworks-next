@@ -31,6 +31,7 @@ const Card = (props: CardData) => {
             buttonType='link' 
             linkUrl={props.linkUrl}
             buttonText={props.linkText}
+            classNames="bg-transparent text-primary-dark hover:text-white"
           />
         </div>
       )}

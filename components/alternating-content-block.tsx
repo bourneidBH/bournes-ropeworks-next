@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "./button"
 import { anton } from "@/styles/fonts"
 
@@ -15,15 +16,16 @@ interface ContentBlock {
 
 const AlternatingContentBlock =({ index, heading, imageUrl, imageAlt, paragraphs, listHeading, listItems, linkUrl, linkText }: ContentBlock) => {
   const isEven = index % 2 == 0;
-  const oddClasses = "flex flex-col-reverse place-items-center md:flex md:flex-row-reverse md:justify-center"
-  const evenClasses = "grid grid-cols-1 place-items-center md:grid-cols-2"
+  const oddClasses = "flex flex-col-reverse place-items-center md:flex-row-reverse md:justify-center md:items-stretch"
+  const evenClasses = "grid grid-cols-1 place-items-center items-stretch md:grid-cols-2"
   return (
     <div className={isEven ? evenClasses : oddClasses}>
-      <div className={`relative w-full min-h-[250px] overflow-hidden md:h-full ${!isEven ? 'md:w-[50%]' : ''}`}>
-        <img 
+      <div className={`relative w-full min-h-[250px] ${!isEven ? 'md:w-[50%]' : ''}`}>
+        <Image 
           src={imageUrl}
           alt={imageAlt}
-          className="object-cover object-center w-full min-h-[250px] md:h-full"
+          fill={true}
+          style={{objectFit: 'cover', objectPosition: 'center'}}
         />
       </div>
       <div 
@@ -47,11 +49,13 @@ const AlternatingContentBlock =({ index, heading, imageUrl, imageAlt, paragraphs
           </ul>
         )}
         {linkUrl && linkText && (
-          <Button
-            buttonType='link' 
-            linkUrl={linkUrl}
-            buttonText={linkText}
-          />
+          <div className="text-center mt-6">
+            <Button
+              buttonType='link' 
+              linkUrl={linkUrl}
+              buttonText={linkText}
+            />
+          </div>
         )}
       </div>
     </div>

@@ -12,7 +12,7 @@ interface ButtonProps {
 }
 
 const Button = ({ buttonType, buttonText, linkUrl, onClick, classNames, children }: ButtonProps) => {
-  const btnClasses = `${anton.className} btn ${classNames ? classNames : ''}`
+  const btnClasses = `${anton.className} px-4 py-2 my-4 border-2 border-primary text-center tracking-wider bg-primary text-white hover:bg-primary-dark hover:border-primary-dark ${classNames ? classNames : ''}`
   return buttonType === 'button' 
     ? 
       <button className={btnClasses} onClick={onClick}>{children? children : buttonText}</button>
