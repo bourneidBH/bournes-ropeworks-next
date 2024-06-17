@@ -5,6 +5,7 @@ export type CardData = {
   priceInfo?: string,
   linkUrl?: string,
   linkText?: string,
+  minImageHeight?: number,
 }
 
 export type BannerData = {

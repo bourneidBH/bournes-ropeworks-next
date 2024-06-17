@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import AlternatingContentBlock from "../components/alternating-content-block"
-import Container from "../components/container"
-import Card from "../components/card"
-import { CardData } from "../types"
+import AlternatingContentBlock from "@/components/alternating-content-block"
+import Container from "@/components/container"
+import Card from "@/components/card"
+import { CardData } from "@/types"
 import { anton } from "@/styles/fonts"
 
 export const metadata: Metadata = {

@@ -6,12 +6,13 @@ import { anton } from "@/styles/fonts"
 const Card = (props: CardData) => {
   return (
     <div className="bg-white shadow-lg w-full max-w-screen-sm pb-4">
-      <div className="relative h-[200px]">
+      <div className="relative h-[200px]" style={{ minHeight : `${props?.minImageHeight ? props.minImageHeight : 200}px`}}>
         <Image 
           src={props.imageUrl} 
           alt={props.title} 
           fill={true}
           style={{objectFit: 'cover', objectPosition: 'center'}}
+          sizes="(max-width: 768px) 100vw, (max-width: 980px) 33vw"
         />
         <h3 className={`${anton.className} text-xl text-white drop-shadow p-4 absolute bottom-0 tracking-wide`}>{props.title}</h3>
       </div>
