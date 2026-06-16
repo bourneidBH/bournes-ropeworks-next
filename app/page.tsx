@@ -33,7 +33,7 @@ const slides: BannerData[] = [
     body: ['Winch lines, auger sling lines, Class II double-braid']
   },
   {
-    imageUrl: '/images/wire-railing2_1920x600.jpg',
+    imageUrl: '/images/wire-railing-2_1920x600.jpg',
     title: 'Architectural Rigging',
     body: ['Wire railings for decks and stairs']
   },
@@ -80,20 +80,19 @@ export default function Home() {
   }
 
   const bannerSettings = {
-    autoplay: true,
-    arrows: false,
     dots: true,
     infinite: true,
-    speed: 500,
-    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover: true,
-    pauseOnFocus: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 5000,
+    cssEase: "linear"
   }
 
   return (
     <>
+      {/* <Banner {...slides[0]} /> */}
       <SlickSlider slides={renderBanners(slides)} settings={bannerSettings} />
       <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
         <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Custom Rigging Solutions</h1>
@@ -111,7 +110,7 @@ export default function Home() {
         listItems={[
           'Dock lines', 'Anchor lines', 'Sailboat running rigging', 'Industrial auger sling lines', '...and more'
         ]}
-        imageUrl="/images/bow-catch_1920-600.jpg"
+        imageUrl="/images/bow-catch1_1920x600.jpg"
         imageAlt="Dock lines"
         linkUrl="/splicing"
         linkText="See All Splices"

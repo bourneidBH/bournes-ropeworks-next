@@ -111,7 +111,7 @@ const Header = () => {
   }, [ref])
 
   return (
-    <header className="w-full relative bg-primary py-2 px-4 flex items-center justify-between">
+    <header className="w-full fixed top-0 shadow-sm z-[9999] bg-primary py-2 px-4 flex items-center justify-between border-b-4 border-b-secondary">
       <Link href="/" title="Bourne's RopeWorks home page">
         <img src="/images/BournesRopeworks_logo-reverse.png" alt="Bourne's Ropeworks logo" className="w-[160px]" />
       </Link>

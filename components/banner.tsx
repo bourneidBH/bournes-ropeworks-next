@@ -1,20 +1,24 @@
 import Image from "next/image";
 import { BannerData } from "../types";
+import { anton } from "@/styles/fonts"
 
 const Banner = (props: BannerData) => {
   return (
-    <div className="relative flex height-[250px] flex-col items-center justify-center w-full bg-primary bg-no-repeat bg-cover bg-center text-center text-white" style={{ backgroundImage: `url(${props.imageUrl})`}}>
+    <div 
+      className="relative flex flex-col items-center justify-center w-full min-h-[200px] text-center text-white md:min-h-[300px] lg:min-h-[350px]"
+    >
       <Image 
         src={props.imageUrl} 
         alt={props?.title || ''} 
         fill={true}
-        style={{objectFit: 'cover', objectPosition: 'center', zIndex: -1 }}
+        style={{ zIndex: -1, objectFit: 'cover', objectPosition: 'center' }}
         unoptimized={true}
+        sizes="(max-width: 768px) 100vw"
       />
       {(props?.title || props?.subhead || props?.body || props?.linkText ) && (
-        <div className="max-w-prose mx-auto bg-black/75 p-12 flex flex-col items-center justify-center">
+        <div className="relative max-w-[calc(100%-48px)] mx-auto bg-black/50 p-4 flex flex-col items-center justify-center md:p-8 md:max-w-prose">
           {props?.title && (
-            <h2 className="text-3xl">{props.title}</h2>
+            <h2 className={`${anton.className} text-2xl`}>{props.title}</h2>
           )}
           {props?.subhead && (
             <p className="text-xl font-bold">{props.subhead}</p>
