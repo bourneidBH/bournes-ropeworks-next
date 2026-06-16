@@ -34,7 +34,7 @@ const AlternatingContentBlock =({ index, heading, imageUrl, imageAlt, paragraphs
       >
         <h2 className={`${anton.className} text-2xl font-secondary tracking-wide`}>{heading}</h2>
         {paragraphs && paragraphs.map((p, idx) => (
-          <p key={idx} className="mb-2">{p}</p>
+          <p key={idx} className="mb-2 max-w-prose">{p}</p>
         ))}
         {listHeading && (
           <h3 className="text-center">{listHeading}</h3>
