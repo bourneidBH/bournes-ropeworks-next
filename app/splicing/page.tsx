@@ -12,7 +12,6 @@ const cards: CardData[] = [
       'Class II double-braid core-to-core splice: Used in industrial applications, permanent loop for fixed attachment point or around thimble.'
     ],
     priceInfo: 'Call for quote',
-    minImageHeight: 300,
   },
   {
     title: 'Double-Braid',
@@ -21,7 +20,6 @@ const cards: CardData[] = [
       'Double-braided (minimum diameter: 5/16”): Used for halyards, sheets, dock lines, slings, winch lines, mooring pennants.'
     ],
     priceInfo: '$30 per splice',
-    minImageHeight: 300,
   },
   {
     title: 'Three-Strand',
@@ -30,7 +28,6 @@ const cards: CardData[] = [
       'Three-stranded rope: Used for dock lines, anchor lines.'
     ],
     priceInfo: '$20 per splice',
-    minImageHeight: 300,
   },
   {
     title: 'Hollow-Braid',
@@ -38,8 +35,7 @@ const cards: CardData[] = [
     body: [
       'Hollow-braid: Used for dinghy control lines.'
     ],
-    priceInfo: '$25 per splice',
-    minImageHeight: 300,
+    priceInfo: '$30 per splice',
   },
   {
     title: 'Tapered',
@@ -48,7 +44,6 @@ const cards: CardData[] = [
       'Tapered lines: Used for sheets and control lines.'
     ],
     priceInfo: '$45 per splice',
-    minImageHeight: 300,
   },
   {
     title: 'Wire-to-Rope',
@@ -57,7 +52,6 @@ const cards: CardData[] = [
       'Wire-to-rope tail splice (double-braided Dacron into twisted stainless steel wire): Used for halyards.'
     ],
     priceInfo: '$100 per splice',
-    minImageHeight: 300,
   },
   {
     title: 'Whipping',
@@ -65,8 +59,7 @@ const cards: CardData[] = [
     body: [
       'Additional security for spliced ends, prevents fraying at bitter end.'
     ],
-    priceInfo: 'Spliced ends whipped at no extra charge; Bitter end $20 each.',
-    minImageHeight: 300,
+    priceInfo: 'One spliced end whipped at no extra charge; Second end $20 each.',
   },
 ]
 
@@ -93,6 +86,7 @@ export default function Services() {
               body={card.body}
               linkUrl={card.linkUrl}
               linkText={card.linkText}
+              priceInfo={card.priceInfo}
             />
           ))}
         </div>

@@ -4,6 +4,7 @@ import { anton } from "@/styles/fonts";
 
 interface ButtonProps {
   buttonType: 'button' | 'link',
+  buttonStyle?: 'solid' | 'outline',
   buttonText: string,
   linkUrl?: string,
   onClick?: () => void,
@@ -11,8 +12,12 @@ interface ButtonProps {
   children?: ReactNode,
 }
 
-const Button = ({ buttonType, buttonText, linkUrl, onClick, classNames, children }: ButtonProps) => {
-  const btnClasses = `${anton.className} px-4 py-2 my-4 border-2 border-primary text-center tracking-wider bg-primary text-white hover:bg-primary-dark hover:border-primary-dark ${classNames ? classNames : ''}`
+const Button = ({ buttonType, buttonStyle, buttonText, linkUrl, onClick, classNames, children }: ButtonProps) => {
+  let btnClasses = `${anton.className} px-4 py-2 my-4 border-2 border-primary text-center tracking-wider bg-primary text-white hover:bg-primary-dark hover:border-primary-dark ${classNames ? classNames : ''}`
+  if (buttonStyle && buttonStyle === 'outline') {
+    btnClasses = `${anton.className} px-4 py-2 my-4 border-2 border-primary text-center tracking-wider bg-transparent text-primary hover:bg-primary-dark hover:border-primary-dark hover:text-white ${classNames ? classNames : ''}`
+  }
+
   return buttonType === 'button' 
     ? 
       <button className={btnClasses} onClick={onClick}>{children? children : buttonText}</button>

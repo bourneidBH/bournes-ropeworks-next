@@ -19,6 +19,7 @@ const cards: CardData[] = [
     ],
     linkUrl: '/marine',
     linkText: 'Learn More',
+    imageAspectRatio: 'aspect-w-16 aspect-h-9',
   },
   {
     title: 'Industrial Rigging',
@@ -28,6 +29,7 @@ const cards: CardData[] = [
     ],
     linkUrl: '/industrial',
     linkText: 'Learn More',
+    imageAspectRatio: 'aspect-w-16 aspect-h-9',
   },
   {
     title: 'Architectural Rigging',
@@ -37,6 +39,7 @@ const cards: CardData[] = [
     ],
     linkUrl: '/architectural',
     linkText: 'Learn More',
+    imageAspectRatio: 'aspect-w-16 aspect-h-9',
   }
 ]
 
@@ -75,6 +78,7 @@ export default function Home() {
               body={card.body}
               linkUrl={card.linkUrl}
               linkText={card.linkText}
+              imageAspectRatio={card.imageAspectRatio}
             />
           ))}
         </div>
