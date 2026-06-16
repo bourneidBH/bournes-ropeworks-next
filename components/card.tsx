@@ -6,7 +6,7 @@ import { anton } from "@/styles/fonts"
 const Card = (props: CardData) => {
   return (
     <div className="bg-white shadow-lg w-full max-w-screen-sm pb-4">
-      <div className="relative h-[200px]" style={{ minHeight : `${props?.minImageHeight ? props.minImageHeight : 200}px`}}>
+      <div className={`relative min-height-[250px] ${props?.imageAspectRatio ? `${props.imageAspectRatio}` : 'aspect-w-1 aspect-h-1'}`} style={{ minHeight : `${props?.minImageHeight ? props.minImageHeight : 250}px` }}>
         <Image 
           src={props.imageUrl} 
           alt={props.title} 
@@ -14,7 +14,7 @@ const Card = (props: CardData) => {
           style={{objectFit: 'cover', objectPosition: 'center'}}
           sizes="(max-width: 768px) 100vw, (max-width: 980px) 33vw"
         />
-        <h3 className={`${anton.className} text-xl text-white drop-shadow p-4 absolute bottom-0 tracking-wide`}>{props.title}</h3>
+        <h3 className={`${anton.className} text-xl text-white drop-shadow-lg p-4 absolute bottom-0 tracking-wide`}>{props.title}</h3>
       </div>
       <div className="p-4">
         {props.body.map((el, idx) => (
@@ -32,7 +32,7 @@ const Card = (props: CardData) => {
             buttonType='link' 
             linkUrl={props.linkUrl}
             buttonText={props.linkText}
-            classNames="bg-transparent text-primary-dark hover:text-white"
+            buttonStyle="outline"
           />
         </div>
       )}
