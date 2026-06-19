@@ -15,27 +15,32 @@ export const metadata: Metadata = {
 const slides: BannerData[] = [
   {
     imageUrl: '/images/bow-catch_1920-600.jpg',
-    title: 'Rigging service in Manitowoc, Wisconsin'
+    title: 'Rigging service in Manitowoc, Wisconsin',
+    inSlider: true,
   },
   {
     imageUrl: '/images/dock-line5_1920x600.jpg',
     title: 'Marine Splicing',
-    body: ['Dock lines, running rigging, standing rigging']
+    body: ['Dock lines, running rigging, standing rigging'],
+    inSlider: true,
   },
   {
     imageUrl: '/images/life-line3_1920x600.jpg',
     title: 'Marine Wire Rope Swaging',
-    body: ['Lifelines, stays']
+    body: ['Lifelines, stays'],
+    inSlider: true,
   },
   {
     imageUrl: '/images/winch-line_1920x600.jpg',
     title: 'Industrial Rope Splicing',
-    body: ['Winch lines, auger sling lines, Class II double-braid']
+    body: ['Winch lines, auger sling lines, Class II double-braid'],
+    inSlider: true,
   },
   {
     imageUrl: '/images/wire-railing-2_1920x600.jpg',
     title: 'Architectural Rigging',
-    body: ['Wire railings for decks and stairs']
+    body: ['Wire railings for decks and stairs'],
+    inSlider: true,
   },
 ]
 
@@ -92,11 +97,10 @@ export default function Home() {
 
   return (
     <>
-      {/* <Banner {...slides[0]} /> */}
       <SlickSlider slides={renderBanners(slides)} settings={bannerSettings} />
       <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
         <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Custom Rigging Solutions</h1>
-        <p className="text-center">With over 30 years experience in fiber and wire rope, we are committed to producing high-quality splicing and rigging solutions. Our passion is splicing rope…any knot you need, we’ll be happy to create! Based in the Manitowoc, Wisconsin area, we can measure and install any local project, or splice to specifications provided and ship finished product nationwide.</p>
+        <p className="text-center">With over 40 years experience in fiber and wire rope, we are committed to producing high-quality splicing and rigging solutions. Our passion is splicing rope…any knot you need, we’ll be happy to create! Based in the Manitowoc, Wisconsin area, we can measure and install any local project, or splice to specifications provided and ship finished product nationwide.</p>
       </div>
 
       <AlternatingContentBlock
@@ -142,7 +146,7 @@ export default function Home() {
         ]}
         listHeading="Applications:"
         listItems={[
-          'Life lines', 'Stays', 'Wire railings', '...and more'
+          'Life lines', 'Stays and shrouds', 'Wire railings', '...and more'
         ]}
         imageUrl="/images/life-line3_1920x600.jpg"
         imageAlt="Life lines"

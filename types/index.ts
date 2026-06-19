@@ -16,6 +16,7 @@ export type BannerData = {
   imageUrl: string,
   linkUrl?: string,
   linkText?: string,
+  inSlider?: boolean,
 }
 
 export type ResponsiveSetting = {

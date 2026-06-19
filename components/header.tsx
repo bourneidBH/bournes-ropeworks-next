@@ -2,9 +2,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaAngleDown, FaBars } from "react-icons/fa6";
 import { MdClose } from "react-icons/md";
 import useWindowDimensions from '../hooks/useWindowDimensions';
+import Container from './container';
 
 interface MenuItem {
   title: string,
@@ -111,71 +113,80 @@ const Header = () => {
   }, [ref])
 
   return (
-    <header className="w-full fixed top-0 shadow-sm z-[9999] bg-primary py-2 px-4 flex items-center justify-between border-b-4 border-b-secondary">
-      <Link href="/" title="Bourne's RopeWorks home page">
-        <img src="/images/BournesRopeworks_logo-reverse.png" alt="Bourne's Ropeworks logo" className="w-[160px]" />
-      </Link>
-      <nav ref={ref} className={`${open ? 'block absolute bg-primary-dark z-10 top-[96px] right-0 h-[calc(100vh-96px)] text-neutral shadow-md p-4' : 'hidden relative top-0 bg-transparent text-white'} text-sm font-medium uppercase md:block md:relative md:bg-transparent md:shadow-none md:top-0 md:text-white`}>
-        <ul className="flex flex-col md:flex-row md:items-center md:justify-end">
-          {navItems.map(item => (
-            <li key={item.slug} className="nav-item relative px-4 py-2">
-              {item?.submenu ? (
-                <div className="flex items-center justify-between">
-                <Link
-                  className={open ? "text-white": "hover:text-secondary md:hover:text-neutral-light"}
-                  href={`/${item.slug}`}
-                >
-                  {item.title}
-                </Link>
-                <button 
-                  id={`dropdownMenuButton-${item.slug}`}
-                  className="px-2 w-2 text-white"
-                  onClick={() => toggleSubmenu(item.slug)}
-                >
-                  <FaAngleDown />
-                </button>
-              </div>
+    <header className="w-full fixed top-0 shadow-sm z-[9999] bg-primary border-b-4 border-b-secondary">
+      <Container className="py-2 px-4 flex items-center justify-between">
 
-              ) : (
-                <Link 
-                  href={`/${item.slug}/`} 
-                  className={open ? "text-white": "hover:text-secondary md:hover:text-neutral-light"}
-                >
-                  {item.title}
-                </Link>
-              )}
-              {item?.submenu && (
-                <ul className="subnav md:hover:block" id={item.slug}>
-                  {item.submenu.map(sub => (
-                    <li key={sub.slug} className={open ? "text-white py-2": "text-neutral font-medium hover:text-secondary py-2"}>
-                      <Link 
-                        href={sub.slug}
-                      >
-                        {sub.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <button 
-        className="p-2 text-white text-2xl hover:text-neutral-light md:hidden" 
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        onClick={toggleOpen}
-      >
-        {/* Hamburger icon */}
-        <span className="[&>svg]:w-7">
-          {open ? (
-            <MdClose size={25} className="mr-4" />
-          ) : (
-            <FaBars size={25} />
-          )}
-        </span>
-      </button>
+        <Link href="/" title="Bourne's RopeWorks home page" className="w-[160px]">
+          <Image 
+            src="/images/BournesRopeworks_logo-reverse.png"
+            alt="Bourne's Ropeworks logo"
+            width={200}
+            height={100}
+            unoptimized={true}
+          />
+        </Link>
+        <nav ref={ref} className={`${open ? 'block absolute bg-primary-dark z-10 top-[96px] right-0 h-[calc(100vh-96px)] text-neutral shadow-md p-4' : 'hidden relative top-0 bg-transparent text-white'} text-sm font-medium uppercase md:block md:relative md:bg-transparent md:shadow-none md:top-0 md:text-white`}>
+          <ul className="flex flex-col md:flex-row md:items-center md:justify-end">
+            {navItems.map(item => (
+              <li key={item.slug} className="nav-item relative px-4 py-2">
+                {item?.submenu ? (
+                  <div className="flex items-center justify-between">
+                  <Link
+                    className={open ? "text-white": "hover:text-secondary md:hover:text-neutral-light"}
+                    href={`/${item.slug}`}
+                  >
+                    {item.title}
+                  </Link>
+                  <button 
+                    id={`dropdownMenuButton-${item.slug}`}
+                    className="px-2 w-2 text-white"
+                    onClick={() => toggleSubmenu(item.slug)}
+                  >
+                    <FaAngleDown />
+                  </button>
+                </div>
+
+                ) : (
+                  <Link 
+                    href={`/${item.slug}/`} 
+                    className={open ? "text-white": "hover:text-secondary md:hover:text-neutral-light"}
+                  >
+                    {item.title}
+                  </Link>
+                )}
+                {item?.submenu && (
+                  <ul className="subnav md:hover:block" id={item.slug}>
+                    {item.submenu.map(sub => (
+                      <li key={sub.slug} className={open ? "text-white py-2": "text-neutral font-medium hover:text-secondary py-2"}>
+                        <Link 
+                          href={sub.slug}
+                        >
+                          {sub.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <button 
+          className="p-2 text-white text-2xl hover:text-neutral-light md:hidden" 
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={toggleOpen}
+        >
+          {/* Hamburger icon */}
+          <span className="[&>svg]:w-7">
+            {open ? (
+              <MdClose size={25} className="mr-4" />
+            ) : (
+              <FaBars size={25} />
+            )}
+          </span>
+        </button>
+      </Container>
     </header>
   )
 }

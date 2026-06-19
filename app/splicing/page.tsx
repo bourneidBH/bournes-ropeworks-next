@@ -65,7 +65,7 @@ const cards: CardData[] = [
 
 export const metadata: Metadata = {
   title: "Splicing - Bourne's Ropeworks",
-  description: "Bourne's Ropeworks offers a variety of rope splicing and rigging services.",
+  description: "Bourne's Ropeworks offers a variety of rope splicing for marine and industrial uses.",
 };
 
 export default function Services() {
@@ -73,7 +73,7 @@ export default function Services() {
     <>
       <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
         <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Types of Splices</h1>
-        <p className="text-center">We offer many types of splices including eye splices, locking eye splices, back splices, end-to-end constant diameter splices, long splices, and tail splices. If you require a splice not listed here, please contact us.</p>
+        <p className="text-center">Splicing creates a permanent eye that is stronger and more secure than a simple knot or cut-and-tie. We provide reliable rope splicing for contractors, boat owners, and industrial teams who need strong, clean terminations that perform under real-world loads. We offer many types of splices including eye splices, locking eye splices, back splices, end-to-end constant diameter splices, long splices, and tail splices. If you require a splice not listed here, please contact us.</p>
         <p className="text-center">All prices quoted are for labor only. Customer can supply their own rope (no used rope, please), or contact us for material price quotes.</p>
       </div>
 
