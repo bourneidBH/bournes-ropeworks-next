@@ -44,7 +44,7 @@ export default function Services() {
     <>
       <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
         <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Our Services</h1>
-        <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id interdum velit laoreet id donec. In eu mi bibendum neque. Volutpat maecenas volutpat blandit aliquam etiam erat. Mi bibendum neque egestas congue. Arcu cursus euismod quis viverra nibh cras. A diam maecenas sed enim ut sem viverra. At consectetur lorem donec massa sapien faucibus et molestie ac. Turpis massa tincidunt dui ut ornare. Dui sapien eget mi proin sed libero enim. Sagittis nisl rhoncus mattis rhoncus urna neque. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Integer feugiat scelerisque varius morbi enim nunc. Accumsan lacus vel facilisis volutpat est velit. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Semper eget duis at tellus at urna.</p>
+        <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id interdum velit laoreet id donec. In eu mi bibendum neque. Volutpat maecenas volutpat blandit aliquam etiam erat. Mi bibendum neque egestas congue.</p>
       </div>
 
       <Container className="mb-12 px-12 md:mb-24 md:px-24">
