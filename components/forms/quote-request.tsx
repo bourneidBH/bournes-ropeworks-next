@@ -7,7 +7,7 @@ import Button from "../button"
 const QuoteRequest = () => {
     return (
         <form
-            className="flex flex-col p-4 pt-0"
+            className="block"
             action="https://formspree.io/f/xeewndoj"
             name="request-quote"
             method="POST"
