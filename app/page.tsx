@@ -1,14 +1,48 @@
 import type { Metadata } from "next";
 import AlternatingContentBlock from "@/components/alternating-content-block"
 import Container from "@/components/container"
+import Banner from "@/components/banner";
 import Card from "@/components/card"
-import { CardData } from "@/types"
+import SlickSlider from "@/components/slider";
+import { CardData, BannerData } from "@/types"
 import { anton } from "@/styles/fonts"
 
 export const metadata: Metadata = {
   title: "Bourne's Ropeworks",
   description: "Bourne's Ropeworks is an experienced rigger based in Manitowoc, WI. We provide rope splicing services for marine and industrial applications.",
 };
+
+const slides: BannerData[] = [
+  {
+    imageUrl: '/images/bow-catch_1920-600.jpg',
+    title: 'Rigging service in Manitowoc, Wisconsin',
+    inSlider: true,
+  },
+  {
+    imageUrl: '/images/dock-line5_1920x600.jpg',
+    title: 'Marine Splicing',
+    body: ['Dock lines, running rigging, standing rigging'],
+    inSlider: true,
+  },
+  {
+    imageUrl: '/images/life-line3_1920x600.jpg',
+    title: 'Marine Wire Rope Swaging',
+    body: ['Lifelines, stays'],
+    inSlider: true,
+  },
+  {
+    imageUrl: '/images/winch-line_1920x600.jpg',
+    title: 'Industrial Rope Splicing',
+    body: ['Winch lines, auger sling lines, Class II double-braid'],
+    inSlider: true,
+  },
+  {
+    imageUrl: '/images/wire-railing-2_1920x600.jpg',
+    title: 'Architectural Rigging',
+    body: ['Wire railings for decks and stairs'],
+    inSlider: true,
+  },
+]
 
 const cards: CardData[] = [
   {
@@ -44,11 +78,29 @@ const cards: CardData[] = [
 ]
 
 export default function Home() {
+  const renderBanners = (bannersArr: BannerData[]) => {
+    return bannersArr.map((banner: BannerData, i: number) => (
+      <Banner key={i} {...banner} />
+    ))
+  }
+
+  const bannerSettings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 5000,
+    cssEase: "linear"
+  }
+
   return (
     <>
+      <SlickSlider slides={renderBanners(slides)} settings={bannerSettings} />
       <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
         <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Custom Rigging Solutions</h1>
-        <p className="text-center">With over 30 years experience in fiber and wire rope, we are committed to producing high-quality splicing and rigging solutions. Our passion is splicing rope…any knot you need, we’ll be happy to create! Based in the Manitowoc, Wisconsin area, we can measure and install any local project, or splice to specifications provided and ship finished product nationwide.</p>
+        <p className="text-center">With over 40 years experience in fiber and wire rope, we are committed to producing high-quality splicing and rigging solutions. Our passion is splicing rope…any knot you need, we’ll be happy to create! Based in the Manitowoc, Wisconsin area, we can measure and install any local project, or splice to specifications provided and ship finished product nationwide.</p>
       </div>
 
       <AlternatingContentBlock
@@ -62,7 +114,7 @@ export default function Home() {
         listItems={[
           'Dock lines', 'Anchor lines', 'Sailboat running rigging', 'Industrial auger sling lines', '...and more'
         ]}
-        imageUrl="/images/bow-catch_1920-600.jpg"
+        imageUrl="/images/bow-catch1_1920x600.jpg"
         imageAlt="Dock lines"
         linkUrl="/splicing"
         linkText="See All Splices"
@@ -94,7 +146,7 @@ export default function Home() {
         ]}
         listHeading="Applications:"
         listItems={[
-          'Life lines', 'Stays', 'Wire railings', '...and more'
+          'Life lines', 'Stays and shrouds', 'Wire railings', '...and more'
         ]}
         imageUrl="/images/life-line3_1920x600.jpg"
         imageAlt="Life lines"

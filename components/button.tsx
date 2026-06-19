@@ -1,3 +1,4 @@
+'use client'
 import { ReactNode } from "react";
 import Link from "next/link";
 import { anton } from "@/styles/fonts";
@@ -10,6 +11,7 @@ interface ButtonProps {
   onClick?: () => void,
   classNames?: string,
   children?: ReactNode,
+  type?: string
 }
 
 const Button = ({ buttonType, buttonStyle, buttonText, linkUrl, onClick, classNames, children }: ButtonProps) => {
