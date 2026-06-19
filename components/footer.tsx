@@ -5,7 +5,7 @@ import { anton } from "@/styles/fonts"
 
 const Footer = () => {
   return(
-    <div className="w-full bg-primary text-white text-sm">
+    <div className="w-full bg-primary text-white text-sm border-t-4 border-t-secondary">
       <Container>
         <div className="p-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col">
