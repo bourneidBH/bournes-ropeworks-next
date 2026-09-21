@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { anton } from "@/styles/fonts"
+import Button from "@/components/button";
 import Container from "@/components/container"
 import Card from "@/components/card"
 import { CardData } from "@/types"
@@ -61,6 +62,14 @@ export default function Services() {
         </div>
 
       </Container>
+      <Container className="flex justify-center py-16">
+        <Button 
+          buttonType="link"
+          buttonText="Contact Bourne's Ropeworks for your next custom rope or leather project"
+          linkUrl="/contact"
+        />
+      </Container>
+
     </>
   )
 }

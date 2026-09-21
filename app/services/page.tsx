@@ -35,8 +35,8 @@ const cards: CardData[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Services - Bourne's Ropeworks",
-  description: "Bourne's Ropeworks offers a variety of rope splicing and rigging services.",
+  title: "Services | Bourne's Ropeworks",
+  description: "Explore marine, industrial, and architectural rigging services in Manitowoc and Sheboygan, WI, including splicing, swaging, dock lines, and more.",
 };
 
 export default function Services() {
@@ -44,7 +44,7 @@ export default function Services() {
     <>
       <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
         <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Our Services</h1>
-        <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id interdum velit laoreet id donec. In eu mi bibendum neque. Volutpat maecenas volutpat blandit aliquam etiam erat. Mi bibendum neque egestas congue.</p>
+        <p className="text-center">From the water to the job site and home, we provide dependable rigging services for marine, industrial, and architectural applications. Our work includes sailboat standing and running rigging, custom-measured and spliced dock lines, lifelines, halyards, truck-mounted winch lines, auger sling lines, and swaged wire railing systems. Installation services are available locally in the Manitowoc and Sheboygan, Wisconsin area. Customers outside this service area are responsible for providing accurate measurements and completing or arranging correct installation.</p>
       </div>
 
       <Container className="mb-12 px-12 md:mb-24 md:px-24">

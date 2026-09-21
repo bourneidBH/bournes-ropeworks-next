@@ -16,6 +16,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <div id="modal-backdrop" />
       </body>
     </html>
   );

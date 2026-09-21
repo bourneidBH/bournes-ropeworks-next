@@ -36,7 +36,7 @@ const cards: CardData[] = [
 
 export const metadata: Metadata = {
   title: "Industries Served - Bourne's Ropeworks",
-  description: "Bourne's Ropeworks offers a variety of rope splicing and rigging services.",
+  description: "Rigging solutions for marine, industrial, and architectural applications in Manitowoc and Sheboygan, WI, including splicing, swaging, and custom lines.",
 };
 
 export default function Services() {
@@ -44,7 +44,7 @@ export default function Services() {
     <>
       <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
         <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Industries Served</h1>
-        <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id interdum velit laoreet id donec. In eu mi bibendum neque. Volutpat maecenas volutpat blandit aliquam etiam erat. Mi bibendum neque egestas congue. Arcu cursus euismod quis viverra nibh cras. A diam maecenas sed enim ut sem viverra. At consectetur lorem donec massa sapien faucibus et molestie ac. Turpis massa tincidunt dui ut ornare. Dui sapien eget mi proin sed libero enim. Sagittis nisl rhoncus mattis rhoncus urna neque. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Integer feugiat scelerisque varius morbi enim nunc. Accumsan lacus vel facilisis volutpat est velit. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Semper eget duis at tellus at urna.</p>
+        <p className="text-center">We provide dependable rigging solutions for a range of marine, industrial, and architectural applications. Our experience includes sailboat rigging and dock lines, truck-mounted winch lines and auger sling lines, as well as swaged wire systems for porch and stair railings. Whether you need custom splicing, measured rigging components, or reliable cable assemblies, we deliver practical solutions tailored to your project. Installation services are available locally in the Manitowoc and Sheboygan, Wisconsin area, while customers outside this service area are responsible for providing accurate measurements and completing or arranging correct installation.</p>
       </div>
 
       <Container className="mb-12 px-12 md:mb-24 md:px-24">
