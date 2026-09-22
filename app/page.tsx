@@ -86,6 +86,7 @@ export default function Home() {
 
   const bannerSettings = {
     dots: true,
+    arrows: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

@@ -11,67 +11,77 @@ export const metadata: Metadata = {
 const figures = [
   {
     image: {
-      src: '/images/life-line1.jpg',
-      alt: 'test',
-      width: 600,
-      height: 450,
+      src: '/images/gallery/barge-docklines.jpg',
+      alt: 'Barge docklines',
+      width: 750,
+      height: 1000,
     },
-    caption: 'Test caption'
+    caption: 'This 3-strand splice in oversized 1-1/2" diameter rope is for a set of barge docklines.'
   },
   {
     image: {
-      src: '/images/running-rigging.jpg',
-      alt: 'test',
-      width: 600,
-      height: 450,
+      src: '/images/gallery/rope-handles_rot-proofing-process.jpg',
+      alt: 'Manila, 3-strand end-to-end splice',
+      width: 1000,
+      height: 753,
     },
-    caption: 'Test caption 2'
+    caption: 'These three-strand Manila rope handles were made for reproduction WWII era ammunition boxes. The photo, courtesy of David Gray, shows the traditional rot-proofing process the handles go through after splicing.'
   },
   {
     image: {
-      src: '/images/running-rigging.jpg',
-      alt: 'Test',
-      width: 600,
-      height: 450,
+      src: '/images/gallery/4-1-block-and-tackle.jpg',
+      alt: '4:1 Block-and-tackle in 3-strand rope',
+      width: 1000,
+      height: 563,
     },
-    caption: 'Test caption 2'
+    caption: 'This project included both traditional three-strand splicing and right-angle reeving to create a 4:1 purchase block-and-tackle.'
   },
   {
     image: {
-      src: '/images/running-rigging.jpg',
-      alt: 'test',
-      width: 600,
-      height: 450,
+      src: '/images/gallery/black-double-braid-docklines.jpg',
+      alt: 'Double-braid eye splice',
+      width: 1000,
+      height: 1000,
     },
-    caption: 'Test caption 2'
+    caption: 'While most docklines are made from three-strand rope, this customer chose a beautiful, black double-braid Nylon rope.'
   },
-    {
+  {
     image: {
-      src: '/images/running-rigging.jpg',
-      alt: 'test',
-      width: 600,
-      height: 450,
+      src: '/images/gallery/double-braid-halyard-spliced-on-thimble.jpg',
+      alt: 'Double-braid spliced onto thimble',
+      width: 1000,
+      height: 1000,
     },
-    caption: 'Test caption 2'
+    caption: 'This double-braid splice for a halyard terminates on a thimble.'
   },
-    {
+  {
     image: {
-      src: '/images/running-rigging.jpg',
-      alt: 'test',
-      width: 600,
-      height: 450,
+      src: '/images/gallery/double-braid-splice-to-harken-lead-ring.jpg',
+      alt: 'Double-braid spliced onto a ring',
+      width: 1000,
+      height: 1000,
     },
-    caption: 'Test caption 2'
+    caption: 'This double-braid halyard was spliced directly onto a Harken lead ring.'
   },
-    {
+  {
     image: {
-      src: '/images/running-rigging.jpg',
-      alt: 'test',
-      width: 600,
-      height: 450,
+      src: '/images/gallery/double-braid-halyard-spliced-to-snap-shackle.jpg',
+      alt: 'Double-braid spliced onto snap shackle',
+      width: 1000,
+      height: 1000,
     },
-    caption: 'Test caption 2'
+    caption: 'This double-braid halyard was spliced directly onto a snap shackle.'
   },
+  {
+    image: {
+      src: '/images/gallery/3-strand-mooring-lines.jpg',
+      alt: 'Three-strand mooring lines installed',
+      width: 1000,
+      height: 1000,
+    },
+    caption: 'These three-strand spliced mooring lines were measured, spliced, and installed.'
+  },
+
 ]
 
 export default function GalleryPage() {

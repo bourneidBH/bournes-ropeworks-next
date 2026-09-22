@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`w-full ${roboto.className}`}>
         <Header />
         <main className="w-full flex flex-col min-h-[calc(100vh-96px)] mt-[100px]">
           {children}

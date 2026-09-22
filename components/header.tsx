@@ -56,6 +56,10 @@ const navItems: MenuItem[] = [
     slug: 'about'
   },
   {
+    title: 'Project Gallery',
+    slug: 'gallery'
+  },
+  {
     title: 'Contact',
     slug: 'contact'
   },
@@ -125,14 +129,14 @@ const Header = () => {
             unoptimized={true}
           />
         </Link>
-        <nav ref={ref} className={`${open ? 'block absolute bg-primary-dark z-10 top-[96px] right-0 h-[calc(100vh-96px)] text-neutral shadow-md p-4' : 'hidden relative top-0 bg-transparent text-white'} text-sm font-medium uppercase md:block md:relative md:bg-transparent md:shadow-none md:top-0 md:text-white`}>
-          <ul className="flex flex-col md:flex-row md:items-center md:justify-end">
+        <nav ref={ref} className={`${open ? 'block absolute bg-primary-dark z-10 top-[96px] right-0 h-[calc(100vh-96px)] text-neutral shadow-md p-4' : 'hidden relative top-0 bg-transparent text-white'} text-sm font-medium uppercase lg:block lg:relative lg:bg-transparent lg:shadow-none lg:top-0 lg:text-white`}>
+          <ul className="flex flex-col lg:flex-row lg:items-center lg:justify-end">
             {navItems.map(item => (
               <li key={item.slug} className="nav-item relative px-4 py-2">
                 {item?.submenu ? (
                   <div className="flex items-center justify-between">
                   <Link
-                    className={open ? "text-white": "hover:text-secondary md:hover:text-neutral-light"}
+                    className={open ? "text-white": "hover:text-secondary lg:hover:text-neutral-light"}
                     href={`/${item.slug}`}
                   >
                     {item.title}
@@ -149,13 +153,13 @@ const Header = () => {
                 ) : (
                   <Link 
                     href={`/${item.slug}/`} 
-                    className={open ? "text-white": "hover:text-secondary md:hover:text-neutral-light"}
+                    className={open ? "text-white": "hover:text-secondary lg:hover:text-neutral-light"}
                   >
                     {item.title}
                   </Link>
                 )}
                 {item?.submenu && (
-                  <ul className="subnav md:hover:block" id={item.slug}>
+                  <ul className="subnav lg:hover:block" id={item.slug}>
                     {item.submenu.map(sub => (
                       <li key={sub.slug} className={open ? "text-white py-2": "text-neutral font-medium hover:text-secondary py-2"}>
                         <Link 
@@ -172,7 +176,7 @@ const Header = () => {
           </ul>
         </nav>
         <button 
-          className="p-2 text-white text-2xl hover:text-neutral-light md:hidden" 
+          className="p-2 text-white text-2xl hover:text-neutral-light lg:hidden" 
           aria-expanded="false"
           aria-label="Toggle navigation"
           onClick={toggleOpen}

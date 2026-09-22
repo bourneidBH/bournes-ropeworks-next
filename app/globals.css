@@ -213,8 +213,7 @@ p:not(:last-child) {
   text-decoration: none;
 }
 
-
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .nav-item .subnav {
     position: relative;
     background: transparent;
@@ -224,6 +223,9 @@ p:not(:last-child) {
   .nav-item .subnav li:last-child {
     padding-bottom: 0;
   }
+}
+
+@media (max-width: 767px) {
   .gallery .image {
     max-width: 100%;
   }
