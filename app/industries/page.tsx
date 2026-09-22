@@ -7,7 +7,7 @@ import { CardData } from "@/types"
 const cards: CardData[] = [
   {
     title: 'Marine',
-    imageUrl: '/images/running-rigging.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/running-rigging.jpg`,
     body: [
       'From replacement standing rigging and lifelines, to sailboat running rigging and sail handling systems, we will ensure you get the correct rigging solution for your boat the first time.'
     ],
@@ -16,7 +16,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Industrial',
-    imageUrl: '/images/winch-line.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/winch-line.jpg`,
     body: [
       'Our heavy-duty industrial winch lines and auger sling lines are popular in construction and utility industries. We ship nationwide.'
     ],
@@ -25,7 +25,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Architectural',
-    imageUrl: '/images/wire-railing-2_1920x600.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/wire-railing-2_1920x600.jpg`,
     body: [
       'Wire railings can give your architectural project a clean, modern look. For local projects, we can work with your builder to measure and install railings.'
     ],

@@ -8,7 +8,7 @@ import { CardData } from "@/types"
 const cards: CardData[] = [
   {
     title: 'Leather Work',
-    imageUrl: '/images/splice-cards_leather.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_leather.jpg`,
     body: [
       'Leather Work: Use as chafe guard where rope rubs against metal, as hand protection on steering wheels, or for decorative applications.'
     ],
@@ -16,7 +16,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Fancy Work',
-    imageUrl: '/images/splice-cards_fancy.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_fancy.jpg`,
     body: [
       'Fancy Work: Use for decorative applications. A wide variety of decorative knots and rope braiding available to suit any project.'
     ],
@@ -24,7 +24,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Custom Projects',
-    imageUrl: '/images/splice-cards_rope-handle.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_rope-handle.jpg`,
     body: [
       'Custom Projects: If it\'s made from rope we can probably create it. See our project gallery for examples of unique applications.'
     ],

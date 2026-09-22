@@ -13,7 +13,7 @@ export default function About() {
             <Container>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-[1fr_2fr]">
                     <Image 
-                        src="/images/furling-install.jpg"
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/furling-install.jpg`}
                         alt="Furling Installation"
                         width={600}
                         height={554}

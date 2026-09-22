@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const blocks = [
   {
     heading: 'Standing Rigging',
-    imageUrl: '/images/life-line1.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/life-line1.jpg`,
     imageAlt: 'Swaged end of sailboat lifeline',
     paragraphs: [
       'Shrouds and stays are made from 1 x 19 stainless steel wire rope.',
@@ -22,7 +22,7 @@ const blocks = [
   },
   {
     heading: 'Running Rigging',
-    imageUrl: '/images/running-rigging.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/running-rigging.jpg`,
     imageAlt: 'Sailboat mastbase with various halyards',
     paragraphs: [
       'Halyards and sheets are made from double-braided Dacron.',
@@ -32,7 +32,7 @@ const blocks = [
   },
   {
     heading: 'Dock Lines',
-    imageUrl: '/images/dock-line4.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/dock-line4.jpg`,
     imageAlt: 'Mooring with spliced docklines shackled to ring bolt',
     paragraphs: [
       'Traveling dock lines are measured and custom-made to travel with the boat.',
@@ -42,7 +42,7 @@ const blocks = [
   },
   {
     heading: 'Harken Service Center',
-    imageUrl: '/images/furling-install.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/furling-install.jpg`,
     imageAlt: 'Jim Bourne installing a Harken MKIII furler',
     paragraphs: [
       'In addition to our rigging services, we are also an authorized service center for Harken installations and repairs.',

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const blocks = [
   {
     heading: 'Winch Lines & Auger Slings',
-    imageUrl: '/images/winch-line.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/winch-line.jpg`,
     imageAlt: 'Truck-mounted drum winch line',
     paragraphs: [
       'Winch lines are long, large-diameter, double-braided Dacron rope with eyes spliced on each end. They are stored on large winch drums (often truck-mounted), and used to tension things such as high-voltage power lines or telephone pole applications because the rope is electrically non-conductive.',
@@ -21,7 +21,7 @@ const blocks = [
   },
   {
     heading: 'Other Industrial Applications',
-    imageUrl: '/images/winch-line2.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/winch-line2.jpg`,
     imageAlt: 'Class II double-braid splice on a truck application',
     paragraphs: [
       'If you have questions about other possible industrial applications, please contact us. For all industrial applications, please request a price quote. Discounts may be available for volume orders.',

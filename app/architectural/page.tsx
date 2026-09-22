@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const blocks = [
   {
     heading: 'Wire Railings',
-    imageUrl: '/images/Deck-005.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/Deck-005.jpg`,
     imageAlt: 'Wire deck railing',
     paragraphs: [
       'Wire railings and rungs for porches, decks, and stairways are made from 7 x 19 stainless steel wire rope. They can be made as not-adjustable, or for adjustable tension with a turnbuckle at one end.',
@@ -20,7 +20,7 @@ const blocks = [
   },
   {
     heading: 'Installation Information',
-    imageUrl: '/images/wire-railing-2_1920x600.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/wire-railing-2_1920x600.jpg`,
     imageAlt: 'Wire deck and stair railing',
     paragraphs: [
       'For customers in the Sheboygan/Manitowoc County area, we will be happy to work with your carpenter, builder, or fabricator to take measurements and install the finished work. In all other areas, customers are responsible for supplying accurate specifications and measurements. We do not provide installation outside of East Central Wisconsin.',

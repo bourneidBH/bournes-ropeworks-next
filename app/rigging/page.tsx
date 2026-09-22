@@ -8,7 +8,7 @@ import { CardData } from "@/types"
 const cards: CardData[] = [
   {
     title: 'Swaging',
-    imageUrl: '/images/splice-cards_swaging.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_swaging.jpg`,
     body: [
       'Swaging: Use to permanently attach eyes, forks or threaded studs to wire rope ends.'
     ],
@@ -16,7 +16,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Duplex-Sleeve',
-    imageUrl: '/images/splice-cards_nicopress-duplex.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_nicopress-duplex.jpg`,
     body: [
       'Duplex Sleeve Nicopress: Used as pressed eyes used on topping lifts, stays on ice boats.'
     ],
@@ -24,7 +24,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Headstays',
-    imageUrl: '/images/splice-cards_3-strand.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_3-strand.jpg`,
     body: [
       'In the Sheboygan/Manitowoc County area, we will alter existing or build new headstays to accommodate headsail furlers.'
     ],

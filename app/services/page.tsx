@@ -7,7 +7,7 @@ import { CardData } from "@/types"
 const cards: CardData[] = [
   {
     title: 'Splicing',
-    imageUrl: '/images/running-rigging.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/running-rigging.jpg`,
     body: [
       'From replacement sailboat running rigging and sail handling systems, to industrial block-and-tackle or winch systems, we have the expertise to choose the right splicing type for your rope material and construction.'
     ],
@@ -16,7 +16,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Wire Rigging',
-    imageUrl: '/images/splice-cards_swaging.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_swaging.jpg`,
     body: [
       'We provide custom wire rigging and swaging for sail and powerboat lifelines and sailboat stays. In architectural applications, swaged wire railings can give any project a clean, modern look.'
     ],
@@ -25,7 +25,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Custom',
-    imageUrl: '/images/splice-cards_leather.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_leather.jpg`,
     body: [
       'Have a unique rope or leather project? We can do decorative knotwork, leather stitching for boat or hotrod steering wheels, and other applications we\'ve never thought off. Bring your ideas!'
     ],

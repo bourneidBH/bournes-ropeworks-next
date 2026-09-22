@@ -32,6 +32,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /bournes-ropeworks-next
         run: npx next build --webpack
 
       - name: Upload site

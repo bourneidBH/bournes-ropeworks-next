@@ -122,7 +122,7 @@ const Header = () => {
 
         <Link href="/" title="Bourne's RopeWorks home page" className="w-[160px]">
           <Image 
-            src="/images/BournesRopeworks_logo-reverse.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/BournesRopeworks_logo-reverse.png`}
             alt="Bourne's Ropeworks logo"
             width={200}
             height={100}

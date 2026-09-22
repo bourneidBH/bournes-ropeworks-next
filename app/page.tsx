@@ -14,30 +14,30 @@ export const metadata: Metadata = {
 
 const slides: BannerData[] = [
   {
-    imageUrl: '/images/bow-catch_1920-600.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/bow-catch_1920-600.jpg`,
     title: 'Rigging service in Manitowoc, Wisconsin',
     inSlider: true,
   },
   {
-    imageUrl: '/images/dock-line5_1920x600.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/dock-line5_1920x600.jpg`,
     title: 'Marine Splicing',
     body: ['Dock lines, running rigging, standing rigging'],
     inSlider: true,
   },
   {
-    imageUrl: '/images/life-line3_1920x600.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/life-line3_1920x600.jpg`,
     title: 'Marine Wire Rope Swaging',
     body: ['Lifelines, stays'],
     inSlider: true,
   },
   {
-    imageUrl: '/images/winch-line_1920x600.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/winch-line_1920x600.jpg`,
     title: 'Industrial Rope Splicing',
     body: ['Winch lines, auger sling lines, Class II double-braid'],
     inSlider: true,
   },
   {
-    imageUrl: '/images/wire-railing-2_1920x600.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/wire-railing-2_1920x600.jpg`,
     title: 'Architectural Rigging',
     body: ['Wire railings for decks and stairs'],
     inSlider: true,
@@ -47,7 +47,7 @@ const slides: BannerData[] = [
 const cards: CardData[] = [
   {
     title: 'Marine Rigging',
-    imageUrl: '/images/running-rigging.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/running-rigging.jpg`,
     body: [
       'From replacement standing rigging and lifelines, to sailboat running rigging and sail handling systems, we will ensure you get the correct rigging solution for your boat the first time.'
     ],
@@ -57,7 +57,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Industrial Rigging',
-    imageUrl: '/images/winch-line.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/winch-line.jpg`,
     body: [
       'Our heavy-duty industrial winch lines and auger sling lines are popular in construction and utility industries. We ship nationwide.'
     ],
@@ -67,7 +67,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Architectural Rigging',
-    imageUrl: '/images/wire-railing-2_1920x600.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/wire-railing-2_1920x600.jpg`,
     body: [
       'Wire railings can give your architectural project a clean, modern look. For local projects, we can work with your builder to measure and install railings.'
     ],
@@ -115,7 +115,7 @@ export default function Home() {
         listItems={[
           'Dock lines', 'Anchor lines', 'Sailboat running rigging', 'Industrial auger sling lines', '...and more'
         ]}
-        imageUrl="/images/bow-catch1_1920x600.jpg"
+        imageUrl={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/bow-catch1_1920x600.jpg`}
         imageAlt="Dock lines"
         linkUrl="/splicing"
         linkText="See All Splices"
@@ -149,7 +149,7 @@ export default function Home() {
         listItems={[
           'Life lines', 'Stays and shrouds', 'Wire railings', '...and more'
         ]}
-        imageUrl="/images/life-line3_1920x600.jpg"
+        imageUrl={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/life-line3_1920x600.jpg`}
         imageAlt="Life lines"
         linkUrl="/rigging"
         linkText="See Rigging Services"

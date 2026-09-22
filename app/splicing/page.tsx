@@ -8,7 +8,7 @@ import { CardData } from "@/types"
 const cards: CardData[] = [
   {
     title: 'Class II',
-    imageUrl: '/images/splice-cards_Class-II.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_Class-II.jpg`,
     body: [
       'Class II double-braid core-to-core splice: Used in industrial applications, permanent loop for fixed attachment point or around thimble.'
     ],
@@ -16,7 +16,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Double-Braid',
-    imageUrl: '/images/splice-cards_double-braid.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_double-braid.jpg`,
     body: [
       'Double-braided (minimum diameter: 5/16”): Used for halyards, sheets, dock lines, slings, winch lines, mooring pennants.'
     ],
@@ -24,7 +24,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Three-Strand',
-    imageUrl: '/images/splice-cards_3-strand.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_3-strand.jpg`,
     body: [
       'Three-stranded rope: Used for dock lines, anchor lines.'
     ],
@@ -32,7 +32,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Hollow-Braid',
-    imageUrl: '/images/splice-cards_hollow-braid.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_hollow-braid.jpg`,
     body: [
       'Hollow-braid: Used for dinghy control lines.'
     ],
@@ -40,7 +40,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Tapered',
-    imageUrl: '/images/splice-cards_tapered.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_tapered.jpg`,
     body: [
       'Tapered lines: Used for sheets and control lines.'
     ],
@@ -48,7 +48,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Wire-to-Rope',
-    imageUrl: '/images/splice-cards_wire-to-rope.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_wire-to-rope.jpg`,
     body: [
       'Wire-to-rope tail splice (double-braided Dacron into twisted stainless steel wire): Used for halyards.'
     ],
@@ -56,7 +56,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Whipping',
-    imageUrl: '/images/splice-cards_whipping.jpg',
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_whipping.jpg`,
     body: [
       'Additional security for spliced ends, prevents fraying at bitter end.'
     ],

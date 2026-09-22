@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const figures = [
   {
     image: {
-      src: '/images/gallery/barge-docklines.jpg',
+      src: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/gallery/barge-docklines.jpg`,
       alt: 'Barge docklines',
       width: 750,
       height: 1000,
@@ -20,7 +20,7 @@ const figures = [
   },
   {
     image: {
-      src: '/images/gallery/rope-handles_rot-proofing-process.jpg',
+      src: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/gallery/rope-handles_rot-proofing-process.jpg`,
       alt: 'Manila, 3-strand end-to-end splice',
       width: 1000,
       height: 753,
@@ -29,7 +29,7 @@ const figures = [
   },
   {
     image: {
-      src: '/images/gallery/4-1-block-and-tackle.jpg',
+      src: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/gallery/4-1-block-and-tackle.jpg`,
       alt: '4:1 Block-and-tackle in 3-strand rope',
       width: 1000,
       height: 563,
@@ -38,7 +38,7 @@ const figures = [
   },
   {
     image: {
-      src: '/images/gallery/black-double-braid-docklines.jpg',
+      src: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/gallery/black-double-braid-docklines.jpg`,
       alt: 'Double-braid eye splice',
       width: 1000,
       height: 1000,
@@ -47,7 +47,7 @@ const figures = [
   },
   {
     image: {
-      src: '/images/gallery/double-braid-halyard-spliced-on-thimble.jpg',
+      src: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/gallery/double-braid-halyard-spliced-on-thimble.jpg`,
       alt: 'Double-braid spliced onto thimble',
       width: 1000,
       height: 1000,
@@ -56,7 +56,7 @@ const figures = [
   },
   {
     image: {
-      src: '/images/gallery/double-braid-splice-to-harken-lead-ring.jpg',
+      src: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/gallery/double-braid-splice-to-harken-lead-ring.jpg`,
       alt: 'Double-braid spliced onto a ring',
       width: 1000,
       height: 1000,
@@ -65,7 +65,7 @@ const figures = [
   },
   {
     image: {
-      src: '/images/gallery/double-braid-halyard-spliced-to-snap-shackle.jpg',
+      src: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/gallery/double-braid-halyard-spliced-to-snap-shackle.jpg`,
       alt: 'Double-braid spliced onto snap shackle',
       width: 1000,
       height: 1000,
@@ -74,7 +74,7 @@ const figures = [
   },
   {
     image: {
-      src: '/images/gallery/3-strand-mooring-lines.jpg',
+      src: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/gallery/3-strand-mooring-lines.jpg`,
       alt: 'Three-strand mooring lines installed',
       width: 1000,
       height: 1000,
