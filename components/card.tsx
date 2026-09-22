@@ -13,6 +13,7 @@ const Card = (props: CardData) => {
           fill={true}
           style={{objectFit: 'cover', objectPosition: 'center'}}
           sizes="(max-width: 768px) 100vw, (max-width: 980px) 33vw"
+          unoptimized={true}
         />
         <div className="w-full bg-black/30 absolute bottom-0">
           <h3 className={`${anton.className} text-xl text-white drop-shadow-lg p-4 tracking-wide`}>{props.title}</h3>

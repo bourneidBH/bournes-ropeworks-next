@@ -28,6 +28,7 @@ const Figure: FC<Props> = ({ image, caption, inLightbox, onClick }) => {
             width={image.width}
             height={image.height}
             sizes={image?.sizes}
+            unoptimized={true}
           />
         ) : (
           <Image
@@ -37,6 +38,7 @@ const Figure: FC<Props> = ({ image, caption, inLightbox, onClick }) => {
             fill={true}
             style={{ objectFit: 'cover' }}
             onClick={onClick}
+            unoptimized={true}
           />
         )}
         {image?.alt && (

@@ -27,6 +27,7 @@ const AlternatingContentBlock =({ index, heading, imageUrl, imageAlt, paragraphs
           fill={true}
           style={{objectFit: 'cover', objectPosition: 'center'}}
           sizes="(max-width: 768px) 100vw, (max-width: 980px) 50vw"
+          unoptimized={true}
         />
       </div>
       <div 
