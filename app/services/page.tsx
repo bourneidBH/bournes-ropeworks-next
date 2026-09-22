@@ -9,25 +9,25 @@ const cards: CardData[] = [
     title: 'Splicing',
     imageUrl: '/images/running-rigging.jpg',
     body: [
-      'From replacement standing rigging and lifelines, to sailboat running rigging and sail handling systems, we will ensure you get the correct rigging solution for your boat the first time.'
+      'From replacement sailboat running rigging and sail handling systems, to industrial block-and-tackle or winch systems, we have the expertise to choose the right splicing type for your rope material and construction.'
     ],
     linkUrl: '/splicing',
     linkText: 'Learn More',
   },
   {
-    title: 'Rigging',
-    imageUrl: '/images/winch-line.jpg',
+    title: 'Wire Rigging',
+    imageUrl: '/images/splice-cards_swaging.jpg',
     body: [
-      'Our heavy-duty industrial winch lines and auger sling lines are popular in construction and utility industries. We ship nationwide.'
+      'We provide custom wire rigging and swaging for sail and powerboat lifelines and sailboat stays. In architectural applications, swaged wire railings can give any project a clean, modern look.'
     ],
     linkUrl: '/rigging',
     linkText: 'Learn More',
   },
   {
     title: 'Custom',
-    imageUrl: '/images/wire-railing-2_1920x600.jpg',
+    imageUrl: '/images/splice-cards_leather.jpg',
     body: [
-      'Wire railings can give your architectural project a clean, modern look. For local projects, we can work with your builder to measure and install railings.'
+      'Have a unique rope or leather project? We can do decorative knotwork, leather stitching for boat or hotrod steering wheels, and other applications we\'ve never thought off. Bring your ideas!'
     ],
     linkUrl: '/custom',
     linkText: 'Learn More',
@@ -36,7 +36,7 @@ const cards: CardData[] = [
 
 export const metadata: Metadata = {
   title: "Services | Bourne's Ropeworks",
-  description: "Explore marine, industrial, and architectural rigging services in Manitowoc and Sheboygan, WI, including splicing, swaging, dock lines, and more.",
+  description: "Explore rope and wire rigging services in Manitowoc and Sheboygan, WI, including splicing, swaging, dock lines, and more.",
 };
 
 export default function Services() {
@@ -44,7 +44,7 @@ export default function Services() {
     <>
       <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
         <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Our Services</h1>
-        <p className="text-center">From the water to the job site and home, we provide dependable rigging services for marine, industrial, and architectural applications. Our work includes sailboat standing and running rigging, custom-measured and spliced dock lines, lifelines, halyards, truck-mounted winch lines, auger sling lines, and swaged wire railing systems. Installation services are available locally in the Manitowoc and Sheboygan, Wisconsin area. Customers outside this service area are responsible for providing accurate measurements and completing or arranging correct installation.</p>
+        <p className="text-center">From the water to the job site and home, we provide dependable rope and wire rigging services for marine, industrial, and architectural applications. Our rope splicing services include sailboat running rigging, custom-measured and spliced dock lines, halyards, truck-mounted winch lines, and auger sling lines. Wire rope rigging includes stays, lifelines and swaged wire railing systems. Don't see what you're looking for? Check out our custom project work for less common rope and leather applications. Installation services are available locally in the Manitowoc and Sheboygan, Wisconsin area. Customers outside this service area are responsible for providing accurate measurements and completing or arranging correct installation.</p>
       </div>
 
       <Container className="mb-12 px-12 md:mb-24 md:px-24">

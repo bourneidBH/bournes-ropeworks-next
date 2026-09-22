@@ -23,12 +23,13 @@ const cards: CardData[] = [
     priceInfo: 'Call for quote',
   },
   {
-    title: 'FPO',
-    imageUrl: '/images/splice-cards_3-strand.jpg',
+    title: 'Custom Projects',
+    imageUrl: '/images/splice-cards_rope-handle.jpg',
     body: [
-      'Lorem ipsum neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.'
+      'Custom Projects: If it\'s made from rope we can probably create it. See our project gallery for examples of unique applications.'
     ],
-    priceInfo: 'Call for quote',
+    linkUrl: '/gallery',
+    linkText: 'See our project gallery'
   },
 
 ]

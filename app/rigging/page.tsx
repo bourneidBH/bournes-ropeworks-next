@@ -26,7 +26,7 @@ const cards: CardData[] = [
     title: 'Headstays',
     imageUrl: '/images/splice-cards_3-strand.jpg',
     body: [
-      'In the Sheyboygan/Manitowoc County area, we will alter existing or build new headstays to accommodate headsail furlers.'
+      'In the Sheboygan/Manitowoc County area, we will alter existing or build new headstays to accommodate headsail furlers.'
     ],
     priceInfo: 'Call for quote',
   },
