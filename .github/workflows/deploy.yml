@@ -33,7 +33,7 @@ jobs:
 
       - name: Build
         env:
-          NEXT_PUBLIC_BASE_PATH: /bournes-ropeworks-next
+          NEXT_PUBLIC_BASE_PATH: 
         run: npx next build --webpack
 
       - name: Upload site
