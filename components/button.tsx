@@ -15,9 +15,9 @@ interface ButtonProps {
 }
 
 const Button = ({ buttonType, buttonStyle, buttonText, linkUrl, onClick, classNames, children }: ButtonProps) => {
-  let btnClasses = `${anton.className} px-4 py-2 my-4 border-2 border-primary text-center tracking-wider bg-primary text-white hover:bg-primary-dark hover:border-primary-dark ${classNames ? classNames : ''}`
+  let btnClasses = `${anton.className} px-4 py-2 my-4 border-2 border-primary text-center tracking-wide bg-primary text-white hover:bg-primary-dark hover:border-primary-dark ${classNames ? classNames : ''}`
   if (buttonStyle && buttonStyle === 'outline') {
-    btnClasses = `${anton.className} px-4 py-2 my-4 border-2 border-primary text-center tracking-wider bg-transparent text-primary hover:bg-primary-dark hover:border-primary-dark hover:text-white ${classNames ? classNames : ''}`
+    btnClasses = `${anton.className} px-4 py-2 my-4 border-2 border-primary text-center tracking-wide bg-transparent text-primary hover:bg-primary-dark hover:border-primary-dark hover:text-white ${classNames ? classNames : ''}`
   }
 
   return buttonType === 'button' 

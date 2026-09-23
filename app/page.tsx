@@ -99,9 +99,9 @@ export default function Home() {
   return (
     <>
       <SlickSlider slides={renderBanners(slides)} settings={bannerSettings} />
-      <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
-        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Custom Rigging Solutions</h1>
-        <p className="text-center">With over 40 years experience in fiber and wire rope, we are committed to producing high-quality splicing and rigging solutions. Our passion is splicing rope…any knot you need, we’ll be happy to create! Based in the Manitowoc, Wisconsin area, we can measure and install any local project, or splice to specifications provided and ship finished product nationwide.</p>
+      <div className="intro-text">
+        <h1 className={`${anton.className} text-center text-4xl mb-3 tracking-wide md:text-4xl`}>Custom Rigging Solutions in Wisconsin</h1>
+        <p className="text-center">With over 40 years experience in fiber and wire rope, we are committed to producing high-quality splicing and rigging solutions. Our passion is splicing rope…any splice or knot you need, we’ll be happy to create! Based in the Manitowoc, Wisconsin area, we can measure and install any local project, or splice to specifications provided and ship finished product nationwide.</p>
       </div>
 
       <AlternatingContentBlock
@@ -142,7 +142,7 @@ export default function Home() {
         index={1}
         heading="Wire Rope Swaging"
         paragraphs={[
-          `We can supply finished product for a variety of wire rope applications including swaging permanent eyes, forks or turnbuckles, wrie-to-rope splicing, and wire railings.`,
+          `We can supply finished product for a variety of wire rope applications including swaging permanent eyes, forks or turnbuckles, wire-to-rope splicing, and wire railings.`,
           `We will recommend the correct type of wire and end fittings for your application.`
         ]}
         listHeading="Applications:"

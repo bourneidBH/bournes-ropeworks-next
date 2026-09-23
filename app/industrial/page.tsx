@@ -32,8 +32,8 @@ const blocks = [
 export default function Marine() {
   return (
     <>
-      <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
-        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Industrial Rigging Services</h1>
+      <div className="intro-text">
+        <h1 className={`${anton.className} text-center text-3xl mb-4 tracking-wide md:text-4xl`}>Industrial Rigging Services in Wisconsin</h1>
         <p className="text-center">Keep your equipment operating safely and efficiently with dependable industrial rigging services. We provide professional splicing for truck-mounted winch lines, auger sling lines, and other specialized lifting and pulling applications. Each line is prepared with care to support reliable performance in demanding work environments.</p>
       </div>
       {blocks.map((block, idx) => (
@@ -46,7 +46,7 @@ export default function Marine() {
           paragraphs={block.paragraphs}
         />
       ))}
-      <Container className="flex justify-center py-16">
+      <Container className="flex justify-center py-8 md:py-12">
         <Button
           buttonType="link"
           buttonText="Contact Bourne's Ropeworks for your next industrial rigging project"

@@ -32,8 +32,8 @@ const blocks = [
 export default function Marine() {
   return (
     <>
-      <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
-        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Architectural Rigging Services</h1>
+      <div className="intro-text">
+        <h1 className={`${anton.className} text-center text-3xl mb-4 tracking-wide md:text-4xl`}>Architectural Rigging Services in Wisconsin</h1>
         <p className="text-center">Create clean, secure, and professionally finished cable railing systems with reliable architectural rigging services. We provide swaging for wire porch and stair railings, helping deliver strong, precise connections for residential and commercial applications. Installation services are available locally in the Manitowoc and Sheboygan, Wisconsin area. Customers outside this service area are responsible for providing accurate measurements and completing or arranging correct installation.</p>
       </div>
       {blocks.map((block, idx) => (
@@ -46,7 +46,7 @@ export default function Marine() {
           paragraphs={block.paragraphs}
         />
       ))}
-      <Container className="flex justify-center py-16">
+      <Container className="flex justify-center py-8 md:py-12">
         <Button
           buttonType="link"
           buttonText="Contact Bourne's Ropeworks for your next architectural rigging project"

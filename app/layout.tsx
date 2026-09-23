@@ -12,7 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`w-full ${roboto.className}`}>
         <Header />
-        <main className="w-full flex flex-col min-h-[calc(100vh-96px)] mt-[100px]">
+        <main className="w-full flex flex-col min-h-[calc(100vh-280px)] mt-[100px]">
           {children}
         </main>
         <Footer />

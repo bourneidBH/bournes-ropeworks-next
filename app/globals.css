@@ -31,6 +31,13 @@ code {
     monospace;
 }
 
+.intro-text {
+  max-width: 750px;
+  margin: 6rem auto;
+  padding: 0 1rem;
+}
+
+/* Menu */
 .nav-item .subnav {
   position: absolute;
   display: none;
@@ -226,6 +233,9 @@ p:not(:last-child) {
 }
 
 @media (max-width: 767px) {
+  .intro-text {
+    margin: 3rem auto;
+  }
   .gallery .image {
     max-width: 100%;
   }

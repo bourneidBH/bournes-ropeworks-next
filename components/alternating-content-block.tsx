@@ -16,7 +16,7 @@ interface ContentBlock {
 
 const AlternatingContentBlock =({ index, heading, imageUrl, imageAlt, paragraphs, listHeading, listItems, linkUrl, linkText }: ContentBlock) => {
   const isEven = index % 2 == 0;
-  const oddClasses = "flex flex-col-reverse place-items-center md:flex-row-reverse md:justify-center md:items-stretch"
+  const oddClasses = "flex flex-col place-items-center md:flex-row-reverse md:justify-center md:items-stretch"
   const evenClasses = "flex flex-col place-items-center md:flex-row md:justify-center md:items-stretch"
   return (
     <div className={isEven ? evenClasses : oddClasses}>
@@ -32,7 +32,7 @@ const AlternatingContentBlock =({ index, heading, imageUrl, imageAlt, paragraphs
       </div>
       <div 
         className={`p-8 bg-cover bg-fixed bg-top md:w-[50%]`}
-        style={{ backgroundImage: `url('/images/rope_background.jpg')` }}
+        style={{ backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH}/images/rope_background.jpg')` }}
       >
         <div className="max-w-prose mx-auto">
 

@@ -35,19 +35,19 @@ const cards: CardData[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Custom Rope and Leather Work - Bourne's Ropeworks",
+  title: "Custom Rope and Leather Work | Bourne's Ropeworks",
   description: "Have a custom rope or leather project in mind? Contact Bourne's Ropeworks for help with your idea.",
 };
 
 export default function Services() {
   return (
     <>
-      <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
-        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Custom Rope &amp; Leather Work</h1>
+      <div className="intro-text">
+        <h1 className={`${anton.className} text-center text-3xl mb-4 tracking-wide md:text-4xl`}>Custom Rope &amp; Leather Work in Wisconsin</h1>
         <p className="text-center">We craft custom ropework and decorative “fancy” pieces built to match your application, style, and specifications including eye-catching ornamental knots and finishing details. Whether you’re outfitting a boat, enhancing event décor, or restoring an antique, we combine clean workmanship, quality materials, and careful attention to detail for results that look great and hold up.</p>
       </div>
 
-      <Container className="mb-12 px-12 md:mb-24 md:px-24">
+      <Container className="mb-12 px-12">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {cards.map((card, idx) => (
             <Card 
@@ -63,7 +63,7 @@ export default function Services() {
         </div>
 
       </Container>
-      <Container className="flex justify-center py-16">
+      <Container className="flex justify-center py-8 md:py-12">
         <Button 
           buttonType="link"
           buttonText="Contact Bourne's Ropeworks for your next custom rope or leather project"

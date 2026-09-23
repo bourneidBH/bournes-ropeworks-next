@@ -24,7 +24,7 @@ const cards: CardData[] = [
   },
   {
     title: 'Headstays',
-    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_3-strand.jpg`,
+    imageUrl: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/splice-cards_headstay.jpg`,
     body: [
       'In the Sheboygan/Manitowoc County area, we will alter existing or build new headstays to accommodate headsail furlers.'
     ],
@@ -34,20 +34,20 @@ const cards: CardData[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Rigging - Bourne's Ropeworks",
+  title: "Wire Rigging Services | Bourne's Ropeworks",
   description: "Bourne's Ropeworks offers a variety of wire and rope rigging solutions for marine and industrial uses.",
 };
 
 export default function Services() {
   return (
     <>
-      <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
-        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Wire Rigging Services</h1>
-        <p className="text-center">We provide dependable swaging services for rigging teams that need secure, precisely finished metal terminations. Using the right materials, correct tooling, and proper inspection standards, we build strong connections for wire rope and hardware for applications such as stays and lifelines for marine applications and wire railings for architectural applications.</p>
+      <div className="intro-text">
+        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Wire Rigging Services in Wisconsin</h1>
+        <p className="text-center">We provide dependable swaging services for applications requiring secure, precisely finished metal terminations. Using the right materials, correct tooling, and proper inspection standards, we build strong connections for wire rope and hardware for applications such as stays and lifelines for marine applications and wire railings for architectural applications.</p>
         <p className="text-center">All prices quoted are for labor only. Customer can supply their own fittings, or contact us for material price quotes.</p>
       </div>
 
-      <Container className="mb-12 px-12 md:mb-24 md:px-24">
+      <Container className="mb-12 px-12">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {cards.map((card, idx) => (
             <Card 
@@ -63,10 +63,10 @@ export default function Services() {
         </div>
 
       </Container>
-      <Container className="flex justify-center py-16">
+      <Container className="flex justify-center py-8 md:py-12">
         <Button 
           buttonType="link"
-          buttonText="Contact Bourne's Ropeworks for your next rigging project"
+          buttonText="Contact Bourne's Ropeworks for your next wire rigging project"
           linkUrl="/contact"
         />
       </Container>

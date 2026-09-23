@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { anton } from "@/styles/fonts"
+import Button from "@/components/button";
 import Container from "@/components/container"
 import Card from "@/components/card"
 import { CardData } from "@/types"
@@ -35,19 +36,20 @@ const cards: CardData[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Industries Served - Bourne's Ropeworks",
-  description: "Rigging solutions for marine, industrial, and architectural applications in Manitowoc and Sheboygan, WI, including splicing, swaging, and custom lines.",
+  title: "Rope & Wire Rigging Industries Served | Bourne's Ropeworks",
+  description: "Rigging solutions for marine, industrial, and architectural applications in Manitowoc and Sheboygan, WI, including splicing, swaging, and custom lines. Nationwide shipping available.",
 };
 
 export default function Services() {
   return (
     <>
-      <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
-        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Industries Served</h1>
-        <p className="text-center">We provide dependable rigging solutions for a range of marine, industrial, and architectural applications. Our experience includes sailboat rigging and dock lines, truck-mounted winch lines and auger sling lines, as well as swaged wire systems for porch and stair railings. Whether you need custom splicing, measured rigging components, or reliable cable assemblies, we deliver practical solutions tailored to your project. Installation services are available locally in the Manitowoc and Sheboygan, Wisconsin area, while customers outside this service area are responsible for providing accurate measurements and completing or arranging correct installation.</p>
+      <div className="intro-text">
+        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Wisconsin Rope &amp; Wire Rigging Industries Served</h1>
+        <p className="text-center">We provide dependable rigging solutions for a range of marine, industrial, and architectural applications. Our experience includes sailboat rigging and dock lines, truck-mounted winch lines and auger sling lines, as well as swaged wire systems for porch and stair railings. Whether you need custom splicing, measured rigging components, or reliable cable assemblies, we deliver practical solutions tailored to your project.</p>
+        <p className="text-center">Installation services are available locally in the Manitowoc and Sheboygan, Wisconsin area, while customers outside this service area are responsible for providing accurate measurements and completing or arranging correct installation.</p>
       </div>
 
-      <Container className="mb-12 px-12 md:mb-24 md:px-24">
+      <Container className="mb-12 px-12">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {cards.map((card, idx) => (
             <Card 
@@ -60,8 +62,15 @@ export default function Services() {
             />
           ))}
         </div>
-
       </Container>
+      <Container className="flex justify-center py-8 md:py-12">
+        <Button
+          buttonType="link"
+          buttonText="Contact Bourne's Ropeworks for your next rigging project"
+          linkUrl="/contact"
+        />
+      </Container>
+
     </>
   )
 }

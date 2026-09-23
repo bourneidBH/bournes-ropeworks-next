@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { anton } from "@/styles/fonts"
+import Button from "@/components/button";
 import Container from "@/components/container"
 import Card from "@/components/card"
 import { CardData } from "@/types"
@@ -42,12 +43,13 @@ export const metadata: Metadata = {
 export default function Services() {
   return (
     <>
-      <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
-        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Our Services</h1>
-        <p className="text-center">From the water to the job site and home, we provide dependable rope and wire rigging services for marine, industrial, and architectural applications. Our rope splicing services include sailboat running rigging, custom-measured and spliced dock lines, halyards, truck-mounted winch lines, and auger sling lines. Wire rope rigging includes stays, lifelines and swaged wire railing systems. Don't see what you're looking for? Check out our custom project work for less common rope and leather applications. Installation services are available locally in the Manitowoc and Sheboygan, Wisconsin area. Customers outside this service area are responsible for providing accurate measurements and completing or arranging correct installation.</p>
+      <div className="intro-text">
+        <h1 className={`${anton.className} text-center text-3xl mb-4 tracking-wide md:text-4xl`}>Wisconsin-Based Rope &amp; Wire Rigging Services</h1>
+        <p className="text-center">From the water to the job site and home, we provide dependable rope and wire rigging services for marine, industrial, and architectural applications. Our rope splicing services include sailboat running rigging, custom-measured and spliced dock lines, halyards, truck-mounted winch lines, and auger sling lines. Wire rope rigging includes stays, lifelines and swaged wire railing systems.</p>
+        <p className="text-center">Don't see what you're looking for? Check out our custom project work for less common rope and leather applications. Installation services are available locally in the Manitowoc and Sheboygan, Wisconsin area. Customers outside this service area are responsible for providing accurate measurements and completing or arranging correct installation.</p>
       </div>
 
-      <Container className="mb-12 px-12 md:mb-24 md:px-24">
+      <Container className="mb-12 px-12">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {cards.map((card, idx) => (
             <Card 
@@ -60,8 +62,15 @@ export default function Services() {
             />
           ))}
         </div>
-
       </Container>
+      <Container className="flex justify-center py-8 md:py-12">
+        <Button 
+          buttonType="link"
+          buttonText="Contact Bourne's Ropeworks for your next rigging project"
+          linkUrl="/contact"
+        />
+      </Container>
+
     </>
   )
 }

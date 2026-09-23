@@ -65,20 +65,20 @@ const cards: CardData[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Splicing - Bourne's Ropeworks",
-  description: "Bourne's Ropeworks offers a variety of rope splicing for marine and industrial uses.",
+  title: "Rope Splicing | Bourne's Ropeworks",
+  description: "Bourne's Ropeworks offers a variety of rope splicing for marine and industrial uses. We measure and install in the Manitowoc Sheboygan, WI area or ship nationwide.",
 };
 
 export default function Services() {
   return (
     <>
-      <div className="max-w-prose mx-auto my-12 px-6 md:my-24">
-        <h1 className={`${anton.className} text-center text-4xl mb-4 tracking-wide`}>Types of Splices</h1>
+      <div className="intro-text">
+        <h1 className={`${anton.className} text-center text-3xl mb-4 tracking-wide md:text-4xl`}>Types of Splices</h1>
         <p className="text-center">Splicing creates a permanent eye that is stronger and more secure than a simple knot or cut-and-tie. We provide reliable rope splicing for contractors, boat owners, and industrial teams who need strong, clean terminations that perform under real-world loads. We offer many types of splices including eye splices, locking eye splices, back splices, end-to-end constant diameter splices, long splices, and tail splices. If you require a splice not listed here, please contact us.</p>
         <p className="text-center">All prices quoted are for labor only. Customer can supply their own rope (no used rope, please), or contact us for material price quotes.</p>
       </div>
 
-      <Container className="mb-12 px-12 md:mb-24 md:px-24">
+      <Container className="mb-12 px-12">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {cards.map((card, idx) => (
             <Card 
@@ -94,7 +94,7 @@ export default function Services() {
         </div>
 
       </Container>
-      <Container className="flex justify-center py-16">
+      <Container className="flex justify-center py-8 md:py-12">
         <Button 
           buttonType="link"
           buttonText="Contact Bourne's Ropeworks for your next rope splicing project"

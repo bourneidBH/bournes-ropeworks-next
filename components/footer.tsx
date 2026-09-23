@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex flex-col text-center lg:text-left">
             <Link href="/" title="Bourne's RopeWorks home page" className="w-[100px] mx-auto lg:mx-0">
               <Image 
-                src="/images/BournesRopeworks_logo-reverse.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/BournesRopeworks_logo-reverse.png`}
                 alt="Bourne's Ropeworks logo"
                 width={100}
                 height={50}
@@ -30,14 +30,14 @@ const Footer = () => {
           </div>
           <div className="flex flex-col">
             <h3 className={anton.className}>Industries</h3>
-            <Link href="/splicing" className="my-2">Marine</Link>
-            <Link href="/rigging" className="my-2">Industrial</Link>
-            <Link href="/custom" className="my-2">Architectural</Link>
+            <Link href="/marine" className="my-2">Marine</Link>
+            <Link href="/industrial" className="my-2">Industrial</Link>
+            <Link href="/architectural" className="my-2">Architectural</Link>
           </div>
           <div className="flex flex-col">
             <h3 className={anton.className}>Contact</h3>
             <Link href="/contact" className="my-2">Request a Quote</Link>
-            <a href="mailto:info@bournesropeworks.com" className="my-2">info@bournesropeworks.com</a>
+            <span className="my-2">info@bournesropeworks.com</span>
             <a href="tel:+14143804246" className="my-2">414-380-4246</a>
           </div>
         </div>
