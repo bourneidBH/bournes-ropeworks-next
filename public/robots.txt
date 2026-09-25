@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bournesropeworks.com/sitemap.xml
