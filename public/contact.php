@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/contact" />
+    <link rel="canonical" href="https://bournesropeworks.com/contact" />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <p>
+      This page has moved to
+      <a href="/contact">/contact</a>.
+    </p>
+
+    <script>
+      window.location.replace("/contact");
+    </script>
+  </body>
+</html>
